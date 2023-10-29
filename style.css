@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow-x: none;
+  background-color: #ccd3f5;
+  background-image: linear-gradient(
+    43deg,
+    #ccd3f5 0%,
+    #efc3ec 46%,
+    #f7e2bc 100%
+  );
+}
+
+.navContainer {
+  width: 100vw;
+
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+#navList {
+  width: 100%;
+  padding: 15px;
+  /* margin-left: 15px;
+  margin-left: 15px; */
+  list-style: none;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navLogo {
+  font-size: 2.8rem;
+  color: azure;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#navItems {
+  display: flex;
+  gap: 40px;
+  color: azure;
+}
+
+.footerBox {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+}
+
+.footerBox p {
+  color: azure;
+  font: 2rem;
+}
+
+.contentBox {
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid black; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 3rem;
+  box-shadow: 6px 8px 30px black;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rightBox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+}
+.rightBox img {
+  height: 400px;
+  border-radius: 200px;
+  transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+}
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftBox h2 {
+  font-size: 2rem;
+}
+
+.ingBox {
+  font-size: 1.3rem;
+}
+
+.dirBox {
+  font-size: 1.1rem;
+}
+
+.rightBox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(92, 89, 89, 0.666);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay {
+  opacity: 1;
+}
+
+.rightBox .overlay span {
+  color: white;
+  font-size: 1.2rem;
+}
